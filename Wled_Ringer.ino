@@ -30,9 +30,9 @@ void loop() {
     if (!digitalRead(button)){
       digitalWrite(LED,LOW);
       Serial.print("Butten Pressed \n");
-      send("http://192.168.178.68/win&&PL=2");
+      send("http://192.168.178.97/win&&PL=2");
       delay(duration);
-      send("http://192.168.178.68/win&&PL=1");
+      send("http://192.168.178.97/win&&PL=1");
       Serial.print("Animation done \n");
     }   
   }
